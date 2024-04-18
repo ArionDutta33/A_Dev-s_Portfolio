@@ -1,0 +1,73 @@
+@font-face {
+    font-family: monu;
+    src: url("/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf");
+}
+
+@font-face {
+    font-family: heading;
+    src: url("./Heading-Now-Variable.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #979595;
+    font-family: monu;
+    font-size: 3vw;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+
+}
+
+.page1 {
+    height: 100%;
+    background: red;
+    display: flex;
+    color: gainsboro;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 3vw;
+}
+
+.sentence {
+    color: black;
+    font-family: heading;
+    font-size: 50vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-stretch: expanded;
+    letter-spacing: 2vw;
+    white-space: nowrap;
+    position: relative;
+    left: 90%;
+}
+
+.popup {
+    height: 88vh;
+    background-color: rgb(0, 255, 42);
+    color: rgb(1, 1, 1);
+    width: 28vw;
+    right: 10%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+}
