@@ -1,6 +1,6 @@
 @font-face {
     font-family: monu;
-    src: url("/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf");
+    src: url("./MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf");
 }
 
 @font-face {
@@ -37,7 +37,7 @@ body {
 
 .page1 {
     height: 100%;
-    background: red;
+    background: rgb(0, 0, 0);
     display: flex;
     color: gainsboro;
     align-items: center;
@@ -46,22 +46,25 @@ body {
     padding: 3vw;
 }
 
-.sentence {
+/* .sentence {
     color: black;
     font-family: heading;
     font-size: 50vw;
     font-weight: 900;
     text-transform: uppercase;
-    font-stretch: expanded;
+    font-stretch: 250%;
     letter-spacing: 2vw;
     white-space: nowrap;
     position: relative;
-    left: 90%;
-}
+    left: 180%;
+    color: #fff;
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+
+} */
 
 .popup {
     height: 88vh;
-    background-color: rgb(0, 255, 42);
+    background-color: rgb(255, 255, 255);
     color: rgb(1, 1, 1);
     width: 28vw;
     right: 10%;
@@ -70,4 +73,66 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1vw;
+    padding: 2vw 2vw;
+}
+
+.pfp img {
+    border: #979595;
+    height: 20vw;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    position: relative;
+    top: 10%;
+    left: 5%;
+
+}
+
+.pfp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(39, 36, 36);
+    height: 18vw;
+    position: relative;
+}
+
+.insta {
+    position: absolute;
+    top: 18%;
+    left: 12%;
+}
+
+.css {
+    position: absolute;
+    top: 6%;
+    left: 24%;
+}
+
+.ln {
+    position: absolute;
+    top: 81%;
+    right: 25%;
+}
+
+.js {
+    position: absolute;
+    top: 76%;
+    right: 8%;
+}
+
+.ht {
+    position: absolute;
+    top: 18%;
+    right: 1%;
+}
+
+.rct {
+    position: absolute;
+    top: 6%;
+}
+
+.pfp i {
+    color: wheat;
+    font-size: 2vw;
 }
