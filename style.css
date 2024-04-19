@@ -63,7 +63,6 @@ body {
 }
 
 .page1 .sentence {
-    background: rebeccapurple;
     color: white;
     font-family: heading;
     text-transform: uppercase;
@@ -84,7 +83,7 @@ body {
 }
 
 .page1 .top {
-    background: red;
+    background: rgb(0, 0, 0);
 }
 
 .page1 .sentence .check {
@@ -104,10 +103,11 @@ body {
     left: 70%;
     transform: rotate(90deg);
     font-family: gla;
-    font-size: 4vw;
+    font-size: 3.1vw;
     z-index: 3;
     word-wrap: normal;
     white-space: nowrap;
-    color: black;
+    color: rgb(152, 150, 150);
+    text-transform: uppercase;
     -webkit-text-stroke: 3px rgb(152, 150, 150);
 }
