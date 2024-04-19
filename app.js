@@ -55,7 +55,8 @@ t1.to(".text-vertical", {
 
 
 t1.from(".description", {
-    duration: 15,
-    text: "Hello there, welcome to the world of development and creativity where talent flourishes",
+    duration: 20,
+    delimiter: " ",
+    text: " ",
     ease: "none",
 });
