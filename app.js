@@ -52,9 +52,25 @@ t1.to(".text-vertical", {
 
 })
 // gsap.to(".description", { duration: 1, scrambleText: "THIS IS NEW TEXT" });//or customize things:
+const t2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page2",
+        scroller: "body"
 
+    }
+})
+t2.from(".page2 .about", {
+    opacity: 0,
+    rotate: 40,
+    x: 60,
 
-t1.from(".description", {
+})
+t2.from(".pg2-left", {
+    opacity: 0,
+    x: -100
+})
+
+t2.from(".description", {
     duration: 20,
     delimiter: " ",
     text: " ",
