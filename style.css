@@ -13,6 +13,11 @@
     src: url("./glacial-indifference.bold.otf");
 }
 
+@font-face {
+    font-family: about;
+    src: url("./JTUSjIg1_i6t8kCHKm459Wlhyw.woff2");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +42,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 99;
+    display: none;
 }
 
 .page1 {
@@ -109,4 +115,50 @@ body {
     color: rgb(152, 150, 150);
     text-transform: uppercase;
     -webkit-text-stroke: 3px rgb(152, 150, 150);
+}
+
+.page2 {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+}
+
+.pg2-left {
+    height: 70vh;
+    width: 50vw;
+    background: yellow;
+    align-self: center;
+}
+
+.pg2-right {
+    height: 100vh;
+    width: 50vw;
+    /* background: green; */
+    padding: 2vw 4vw;
+}
+
+.about {
+    /* background: pink; */
+    font-family: about;
+    text-transform: uppercase;
+    font-size: 6vw;
+    font-weight: 999;
+    text-align: center;
+    color: #fff;
+}
+
+.ut {
+    -webkit-text-stroke: 3px #fff;
+    color: black;
+    border: .9px solid rgb(123, 123, 123);
+    padding: .8vw;
+}
+
+.description {
+    margin-top: 2vw;
+    font-family: about;
+    color: silver;
+    padding: 3vw 3vw;
+    font-size: 1.23vw;
 }
