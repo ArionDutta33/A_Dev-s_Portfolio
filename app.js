@@ -25,14 +25,18 @@ t1.to(".loader h1", {
 t1.to(".loader", {
     top: "-100vh"
 })
-t1.to(".page1 .sentence", {
-    transform: "translateX(-90%)",
-    fontWeight: "100",
-    delay: .5,
-    duration: 8
+t1.from(".sentence .top", {
+    opacity: 0,
+    top: "-2vw",
+    duration: 1
 })
-t1.from(".popup", {
-
-    y: 100,
+t1.from(".sentence .check", {
+    opacity: 0,
+    top: "-2vw",
+    duration: 1
+})
+t1.to(".text-vertical", {
+    y: 80,
     opacity: 0
+
 })
