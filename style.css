@@ -8,6 +8,11 @@
     src: url("./Heading-Now-Variable.ttf");
 }
 
+@font-face {
+    font-family: gla;
+    src: url("./glacial-indifference.bold.otf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,107 +37,77 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 99;
-
+    display: none;
 }
 
 .page1 {
     height: 100%;
-    background: rgb(0, 0, 0);
-    display: flex;
-    color: gainsboro;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 3vw;
+    width: 100%;
+    color: white;
+    background: #000;
 }
 
-.sentence {
-    color: black;
-    font-family: heading;
-    font-size: 50vw;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-stretch: 250%;
-    letter-spacing: 2vw;
-    white-space: nowrap;
+.bg {
+    height: 80vh;
+    width: 34vw;
     position: relative;
-    left: 180%;
-    color: #fff;
-    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
-
-}
-
-.popup {
-    height: 88vh;
-    background-color: rgb(255, 255, 255);
-    color: rgb(1, 1, 1);
-    width: 28vw;
-    right: 10%;
-    position: fixed;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1vw;
-    padding: 2vw 2vw;
-}
-
-.pfp img {
-    border: #979595;
-    height: 20vw;
-    object-fit: cover;
-    object-position: center;
-    height: 100%;
-    position: relative;
     top: 10%;
-    left: 5%;
-
+    background: yellow;
+    border-radius: .9rem;
+    background-image: url("https://images.pexels.com/photos/13965867/pexels-photo-13965867.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
 }
 
-.pfp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(39, 36, 36);
-    height: 18vw;
+.page1 .sentence {
+    background: rebeccapurple;
+    color: white;
+    font-family: heading;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 10vw;
+    /* font-stretch: 250%; */
+    /* font-weight: 500; */
+    left: 3%;
+    z-index: 2;
+    top: 10%;
+    mix-blend-mode: exclusion;
+    font-weight: 999;
+    font-stretch: 250%;
+}
+
+.page1 .top {
     position: relative;
 }
 
-.insta {
-    position: absolute;
-    top: 18%;
-    left: 12%;
+.page1 .top {
+    background: red;
 }
 
-.css {
-    position: absolute;
-    top: 6%;
-    left: 24%;
+.page1 .sentence .check {
+    position: relative;
+    left: 20%;
+    color: rgb(0, 0, 0);
+    font-size: 10vw;
+    font-weight: 800;
+    font-stretch: 350%;
+    -webkit-text-stroke: 3px white;
+
 }
 
-.ln {
+.text-vertical {
     position: absolute;
-    top: 81%;
-    right: 25%;
-}
-
-.js {
-    position: absolute;
-    top: 76%;
-    right: 8%;
-}
-
-.ht {
-    position: absolute;
-    top: 18%;
-    right: 1%;
-}
-
-.rct {
-    position: absolute;
-    top: 6%;
-}
-
-.pfp i {
-    color: wheat;
-    font-size: 2vw;
+    top: 44%;
+    left: 70%;
+    transform: rotate(90deg);
+    font-family: gla;
+    font-size: 4vw;
+    z-index: 3;
+    word-wrap: normal;
+    white-space: nowrap;
+    color: black;
+    -webkit-text-stroke: 3px rgb(152, 150, 150);
 }
