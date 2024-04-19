@@ -18,6 +18,9 @@
     src: url("./JTUSjIg1_i6t8kCHKm459Wlhyw.woff2");
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -129,6 +132,10 @@ body {
     width: 50vw;
     background: yellow;
     align-self: center;
+    background-image: url("https://images.pexels.com/photos/5878803/pexels-photo-5878803.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .pg2-right {
@@ -157,8 +164,12 @@ body {
 
 .description {
     margin-top: 2vw;
-    font-family: about;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
     color: silver;
     padding: 3vw 3vw;
     font-size: 1.23vw;
+    line-height: 40px;
 }
