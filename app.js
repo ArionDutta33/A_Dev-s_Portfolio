@@ -13,18 +13,28 @@ const countDown = () => {
     }, 100)
 
 }
-
-
-
-const t1 = gsap.timeline();
-t1.to(".loader h1", {
+const loader = gsap.timeline()
+loader.to(".loader h1", {
     delay: .5,
     duration: 1,
     onStart: countDown()
 })
-t1.to(".loader", {
+loader.to(".loader", {
     top: "-100vh"
 })
+
+const t1 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page1",
+        scroller: "body",
+        markers: true,
+        pin: true,
+        start: "top 0%",
+        end: "top -200%"
+    }
+});
+
+
 t1.from(".sentence .top", {
     opacity: 0,
     top: "-2vw",
