@@ -51,3 +51,11 @@ t1.to(".text-vertical", {
 
 
 })
+// gsap.to(".description", { duration: 1, scrambleText: "THIS IS NEW TEXT" });//or customize things:
+
+
+t1.from(".description", {
+    duration: 15,
+    text: "Hello there, welcome to the world of development and creativity where talent flourishes",
+    ease: "none",
+});
