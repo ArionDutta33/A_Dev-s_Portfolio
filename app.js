@@ -23,16 +23,7 @@ loader.to(".loader", {
     top: "-100vh"
 })
 
-const t1 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".page1",
-        scroller: "body",
-        markers: true,
-        pin: true,
-        start: "top 0%",
-        end: "top -200%"
-    }
-});
+const t1 = gsap.timeline();
 
 
 t1.from(".sentence .top", {
@@ -47,6 +38,17 @@ t1.from(".sentence .check", {
 })
 t1.to(".text-vertical", {
     y: 80,
-    opacity: 0
+    opacity: 0,
+
+    scrollTrigger: {
+        trigger: ".page1",
+        scroller: "body",
+        markers: true,
+        pin: true,
+        start: "top 0%",
+        end: "top -200%",
+        scrub: 4
+    }
+
 
 })
