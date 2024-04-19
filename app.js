@@ -13,17 +13,16 @@ const countDown = () => {
     }, 100)
 
 }
-const loader = gsap.timeline()
-loader.to(".loader h1", {
+const t1 = gsap.timeline()
+t1.to(".loader h1", {
     delay: .5,
     duration: 1,
     onStart: countDown()
 })
-loader.to(".loader", {
+t1.to(".loader", {
     top: "-100vh"
 })
 
-const t1 = gsap.timeline();
 
 
 t1.from(".sentence .top", {
